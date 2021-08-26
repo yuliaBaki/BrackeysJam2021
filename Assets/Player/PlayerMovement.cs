@@ -19,8 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        PlaceHolderHorizontalMovement();
         
-        rigid.MovePosition(rigid.position + new Vector3(horizontal * speed, 0) * Time.deltaTime);
+        rigid.MovePosition(rigid.position + new Vector3(horizontal * speed, 0) * Time.fixedDeltaTime);
         if (!IsGrounded() && rigid.velocity.y < 0.1f)
         {
             Physics.gravity = standardGravity * 1.8f;
@@ -30,10 +31,20 @@ public class PlayerMovement : MonoBehaviour
             Physics.gravity = standardGravity;
         }
     }
-    public void Move(InputAction.CallbackContext context)
+
+    private void PlaceHolderHorizontalMovement()
     {
-        horizontal = context.ReadValue<Vector2>().x;
+        //I apologize for spaghetti code
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) horizontal = 1;
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) horizontal = -1;
+        else horizontal = 0;
     }
+    
+   // public void Move(InputAction.CallbackContext context)
+   // {
+    //    horizontal = context.ReadValue<Vector2>().x;
+  //  }
+    
     public void Jump(InputAction.CallbackContext context)
     {
         if(context.performed && IsGrounded())
