@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,9 +10,20 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     private float horizontal;
-    private float speed = 8f;
-    private float jumpForce = 12f;
+    [SerializeField] private float speed = 8f;
+    [SerializeField] private float jumpForce = 12f;
+    [SerializeField] private Transform spawn;
+    [SerializeField] private GameObject generatedFloor;
     private readonly Vector3 standardGravity = new Vector3(0, -19.62f);
+    [SerializeField] private int RespawnCooldown = 3;
+    [SerializeField] private bool canRespawn = true;
+    
+    
+    private void Awake()
+    {
+        transform.position = spawn.position;
+    }
+
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();
@@ -60,7 +72,21 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Die(InputAction.CallbackContext context)
     {
-        //Seppuku
+        if (canRespawn == false) return;
+        StartCoroutine(RespawnCoroutine());
+    }
+
+    IEnumerator RespawnCoroutine()
+    {
+        canRespawn = false;
+        
+        GameObject spawnedFloor = Instantiate(generatedFloor,transform.position, transform.rotation);
+        spawnedFloor.SetActive(true);
+        transform.position = spawn.position;
+
+        yield return new WaitForSeconds(RespawnCooldown);
+
+        canRespawn = true;
     }
     private bool IsGrounded()
     {
