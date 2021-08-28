@@ -282,6 +282,12 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  speed: 8
+  jumpForce: 12
+  spawn: {fileID: 0}
+  generatedFloor: {fileID: 3713831046873427190, guid: bf62d366166cdc748bf50ddc66e4fba1, type: 3}
+  RespawnCooldown: 3
+  canRespawn: 1
 --- !u!54 &7360436427992672713
 Rigidbody:
   m_ObjectHideFlags: 0
