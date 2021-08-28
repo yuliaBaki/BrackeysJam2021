@@ -1,31 +1,125 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Documents/Programming/Unity/Brackeys2021/BrackeysJam2021/Packages/manifest.json
+    m_FilePath: C:/Users/wanda/Documents/GitHub/BrackeysJam2021/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637656964702874080
-    m_Hash: 3210483636
+      ticks: 637657846887019344
+    m_Hash: 2504367092
   m_LockFileStatus:
-    m_FilePath: D:/Documents/Programming/Unity/Brackeys2021/BrackeysJam2021/Packages/packages-lock.json
+    m_FilePath: C:/Users/wanda/Documents/GitHub/BrackeysJam2021/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637656964703163306
-    m_Hash: 1391224840
+      ticks: 637657846887019344
+    m_Hash: 3327881677
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.unity.animation.rigging@1.0.3
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.3
+      source: 1
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.animation.rigging@1.0.3
+      assetPath: Packages/com.unity.animation.rigging
+      name: com.unity.animation.rigging
+      displayName: Animation Rigging
+      author:
+        name: 
+        email: 
+        url: 
+      category: Animation
+      type: 
+      description: Animation Rigging toolkit using Unity's Animation C# Jobs
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.2-preview
+        - 0.1.4-preview
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.2.3-preview
+        - 0.2.5-preview
+        - 0.2.6-preview
+        - 0.2.7-preview
+        - 0.3.2-preview
+        - 0.3.3-preview
+        - 0.3.4-preview
+        - 1.0.2
+        - 1.0.3
+        - 1.1.0
+        - 1.1.1
+        compatible:
+        - 0.1.2-preview
+        - 0.1.4-preview
+        - 0.2.1-preview
+        - 0.2.2-preview
+        - 0.2.3-preview
+        - 0.2.5-preview
+        - 0.2.6-preview
+        - 0.2.7-preview
+        - 0.3.2-preview
+        - 0.3.3-preview
+        - 0.3.4-preview
+        - 1.0.2
+        - 1.0.3
+        - 1.1.0
+        - 1.1.1
+        verified: 1.0.3
+      dependencies:
+      - name: com.unity.burst
+        version: 1.3.4
+      - name: com.unity.test-framework
+        version: 1.1.14
+      resolvedDependencies:
+      - name: com.unity.burst
+        version: 1.3.4
+      - name: com.unity.mathematics
+        version: 1.2.1
+      - name: com.unity.test-framework
+        version: 1.1.27
+      - name: com.unity.ext.nunit
+        version: 1.0.6
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      keywords:
+      - Animation
+      - Rigging
+      - Constraints
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637338778170000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.animation.rigging.git
+        revision: 536ae6adeb6f1066ee89b6938f6ba5828ea92e5f
+        path: 
     - packageId: com.unity.collab-proxy@1.7.1
       testable: 0
       isDirectDependency: 1
       version: 1.7.1
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.collab-proxy@1.7.1
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.collab-proxy@1.7.1
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -43,9 +137,53 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 1.2.3-preview
+        - 1.2.4-preview
+        - 1.2.6
+        - 1.2.7
+        - 1.2.9
+        - 1.2.11
+        - 1.2.15
+        - 1.2.16
+        - 1.2.17-preview.3
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
+        - 1.4.9
+        - 1.5.7
+        - 1.6.0
         - 1.7.1
+        - 1.8.0
+        - 1.9.0
+        - 2.0.0-preview.6
+        - 2.0.0-preview.8
+        - 2.0.0-preview.15
+        - 2.0.0-preview.17
+        - 2.0.0-preview.20
+        - 2.0.0-preview.21
+        - 2.0.0-preview.22
+        - 2.1.0-preview.3
+        - 2.1.0-preview.5
+        - 2.1.0-preview.6
         compatible:
         - 1.7.1
+        - 1.8.0
+        - 1.9.0
+        - 2.0.0-preview.6
+        - 2.0.0-preview.8
+        - 2.0.0-preview.15
+        - 2.0.0-preview.17
+        - 2.0.0-preview.20
+        - 2.0.0-preview.21
+        - 2.0.0-preview.22
+        - 2.1.0-preview.3
+        - 2.1.0-preview.5
+        - 2.1.0-preview.6
         verified: 1.7.1
       dependencies:
       - name: com.unity.nuget.newtonsoft-json
@@ -79,7 +217,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637616921650000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -92,7 +230,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -133,6 +271,7 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.0.7
         compatible:
         - 1.0.2
         - 1.0.6
@@ -158,6 +297,7 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.0.7
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -197,7 +337,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.11
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.ide.visualstudio@2.0.11
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.ide.visualstudio@2.0.11
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -227,6 +367,7 @@ m_PackageAssets:
         - 2.0.5
         - 2.0.7
         - 2.0.8
+        - 2.0.9
         - 2.0.11
         compatible:
         - 1.0.2
@@ -242,6 +383,7 @@ m_PackageAssets:
         - 2.0.5
         - 2.0.7
         - 2.0.8
+        - 2.0.9
         - 2.0.11
         verified: 2.0.11
       dependencies:
@@ -269,7 +411,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637613656180000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -282,7 +424,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -351,7 +493,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.2
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.inputsystem@1.0.2
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.inputsystem@1.0.2
       assetPath: Packages/com.unity.inputsystem
       name: com.unity.inputsystem
       displayName: Input System
@@ -367,9 +509,65 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.1.2-preview
+        - 0.2.0-preview
+        - 0.2.1-preview
+        - 0.2.6-preview
+        - 0.2.8-preview
+        - 0.2.10-preview
+        - 0.9.0-preview
+        - 0.9.1-preview
+        - 0.9.2-preview
+        - 0.9.3-preview
+        - 0.9.4-preview
+        - 0.9.5-preview
+        - 0.9.6-preview
+        - 1.0.0-preview
+        - 1.0.0-preview.1
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.0-preview.5
+        - 1.0.0-preview.6
+        - 1.0.0-preview.7
+        - 1.0.0
+        - 1.0.1
         - 1.0.2
+        - 1.1.0-pre.5
+        - 1.1.0-pre.6
+        - 1.1.0-preview.1
+        - 1.1.0-preview.2
+        - 1.1.0-preview.3
         compatible:
+        - 0.1.2-preview
+        - 0.2.0-preview
+        - 0.2.1-preview
+        - 0.2.6-preview
+        - 0.2.8-preview
+        - 0.2.10-preview
+        - 0.9.0-preview
+        - 0.9.1-preview
+        - 0.9.2-preview
+        - 0.9.3-preview
+        - 0.9.4-preview
+        - 0.9.5-preview
+        - 0.9.6-preview
+        - 1.0.0-preview
+        - 1.0.0-preview.1
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.0-preview.5
+        - 1.0.0-preview.6
+        - 1.0.0-preview.7
+        - 1.0.0
+        - 1.0.1
         - 1.0.2
+        - 1.1.0-pre.5
+        - 1.1.0-pre.6
+        - 1.1.0-preview.1
+        - 1.1.0-preview.2
+        - 1.1.0-preview.3
         verified: 1.0.2
       dependencies: []
       resolvedDependencies: []
@@ -394,12 +592,12 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637468486210000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: https://github.com/Unity-Technologies/InputSystem.git
+        url: git+https://github.com/Unity-Technologies/InputSystem.git
         revision: 041def76515febb36a83d1f928cfb7aefb85176c
         path: 
     - packageId: com.unity.test-framework@1.1.27
@@ -407,7 +605,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.27
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.test-framework@1.1.27
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.test-framework@1.1.27
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -450,10 +648,13 @@ m_PackageAssets:
         - 1.1.20
         - 1.1.22
         - 1.1.24
+        - 1.1.26
         - 1.1.27
+        - 1.1.29
         compatible:
         - 1.1.27
-        verified: 1.1.27
+        - 1.1.29
+        verified: 1.1.29
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -483,12 +684,12 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637594751620000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
-        url: https://github.com/Unity-Technologies/com.unity.test-framework.git
+        url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
         revision: c2f2cc9b7ea61d42964257363595dff5e8c47c42
         path: 
     - packageId: com.unity.textmeshpro@3.0.6
@@ -496,7 +697,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.6
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.textmeshpro@3.0.6
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.textmeshpro@3.0.6
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -569,6 +770,7 @@ m_PackageAssets:
         - 1.5.4
         - 1.5.5
         - 1.5.6
+        - 1.6.0-preview.1
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -590,6 +792,7 @@ m_PackageAssets:
         - 2.1.4
         - 2.1.5
         - 2.1.6
+        - 2.2.0-preview.1
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -607,8 +810,10 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.2.0-pre.1
         compatible:
         - 3.0.6
+        - 3.2.0-pre.1
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
@@ -651,7 +856,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.8
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.timeline@1.4.8
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.timeline@1.4.8
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -725,10 +930,13 @@ m_PackageAssets:
         - 1.5.2
         - 1.5.4
         - 1.5.5
+        - 1.5.6
         - 1.6.0-pre.1
         - 1.6.0-pre.3
         - 1.6.0-pre.4
         - 1.6.0-pre.5
+        - 1.6.1
+        - 1.6.2
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -743,10 +951,13 @@ m_PackageAssets:
         - 1.5.2
         - 1.5.4
         - 1.5.5
+        - 1.5.6
         - 1.6.0-pre.1
         - 1.6.0-pre.3
         - 1.6.0-pre.4
         - 1.6.0-pre.5
+        - 1.6.1
+        - 1.6.2
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -797,7 +1008,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.ugui@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.ugui@1.0.0
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -860,7 +1071,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.ai@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.ai@1.0.0
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -908,7 +1119,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.androidjni@1.0.0
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -956,7 +1167,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.animation@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.animation@1.0.0
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -1004,7 +1215,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -1052,7 +1263,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.audio@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.audio@1.0.0
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -1100,7 +1311,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.cloth@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.cloth@1.0.0
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -1152,7 +1363,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.director@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.director@1.0.0
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -1208,7 +1419,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -1257,7 +1468,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.imgui@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.imgui@1.0.0
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -1305,7 +1516,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -1353,7 +1564,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -1401,7 +1612,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.physics@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.physics@1.0.0
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -1449,7 +1660,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.physics2d@1.0.0
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -1497,7 +1708,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.screencapture@1.0.0
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -1549,7 +1760,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.terrain@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.terrain@1.0.0
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -1597,7 +1808,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -1653,7 +1864,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.tilemap@1.0.0
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -1705,7 +1916,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.ui@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.ui@1.0.0
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -1753,7 +1964,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.uielements@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.uielements@1.0.0
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -1817,7 +2028,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.umbra@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.umbra@1.0.0
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -1865,7 +2076,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -1921,7 +2132,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -1969,7 +2180,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -2025,7 +2236,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -2081,7 +2292,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -2137,7 +2348,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -2209,7 +2420,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.vehicles@1.0.0
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -2261,7 +2472,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.video@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.video@1.0.0
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -2321,7 +2532,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.vr@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.vr@1.0.0
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -2383,7 +2594,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.wind@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.wind@1.0.0
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -2431,7 +2642,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.xr@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.xr@1.0.0
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -2491,7 +2702,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.subsystems@1.0.0
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -2543,7 +2754,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -2602,7 +2813,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -2663,7 +2874,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 2.0.0
       source: 1
-      resolvedPath: D:\Documents\Programming\Unity\Brackeys2021\BrackeysJam2021\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
       assetPath: Packages/com.unity.nuget.newtonsoft-json
       name: com.unity.nuget.newtonsoft-json
       displayName: Newtonsoft Json
@@ -2672,7 +2883,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: library
+      type: 
       description: 'Newtonsoft Json for use in Unity projects and Unity packages.
         Currently synced to version 12.0.2.
 
@@ -2687,13 +2898,305 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
         - 2.0.0
+        - 2.0.1-preview.1
         compatible:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
         - 2.0.0
+        - 2.0.1-preview.1
         verified: 2.0.0
       dependencies: []
       resolvedDependencies: []
       keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637237898320000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+    - packageId: com.unity.burst@1.3.4
+      testable: 0
+      isDirectDependency: 0
+      version: 1.3.4
+      source: 1
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.burst@1.3.4
+      assetPath: Packages/com.unity.burst
+      name: com.unity.burst
+      displayName: Burst
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Burst is a compiler that translates from IL/.NET bytecode to highly
+        optimized native code using LLVM.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.2.4-preview.5
+        - 0.2.4-preview.7
+        - 0.2.4-preview.11
+        - 0.2.4-preview.12
+        - 0.2.4-preview.13
+        - 0.2.4-preview.14
+        - 0.2.4-preview.15
+        - 0.2.4-preview.16
+        - 0.2.4-preview.17
+        - 0.2.4-preview.18
+        - 0.2.4-preview.19
+        - 0.2.4-preview.20
+        - 0.2.4-preview.21
+        - 0.2.4-preview.22
+        - 0.2.4-preview.23
+        - 0.2.4-preview.24
+        - 0.2.4-preview.25
+        - 0.2.4-preview.30
+        - 0.2.4-preview.31
+        - 0.2.4-preview.33
+        - 0.2.4-preview.34
+        - 0.2.4-preview.37
+        - 0.2.4-preview.41
+        - 0.2.4-preview.45
+        - 0.2.4-preview.48
+        - 0.2.4-preview.50
+        - 1.1.0-preview.2
+        - 1.1.0-preview.3
+        - 1.1.0-preview.4
+        - 1.1.1
+        - 1.1.2
+        - 1.1.3-preview.3
+        - 1.2.0-preview.1
+        - 1.2.0-preview.5
+        - 1.2.0-preview.6
+        - 1.2.0-preview.8
+        - 1.2.0-preview.9
+        - 1.2.0-preview.10
+        - 1.2.0-preview.11
+        - 1.2.0-preview.12
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        - 1.3.0-preview.1
+        - 1.3.0-preview.2
+        - 1.3.0-preview.3
+        - 1.3.0-preview.4
+        - 1.3.0-preview.5
+        - 1.3.0-preview.6
+        - 1.3.0-preview.7
+        - 1.3.0-preview.8
+        - 1.3.0-preview.9
+        - 1.3.0-preview.10
+        - 1.3.0-preview.11
+        - 1.3.0-preview.12
+        - 1.3.0-preview.13
+        - 1.3.0
+        - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
+        - 1.4.0-pre.1
+        - 1.4.0-preview.1
+        - 1.4.0-preview.2
+        - 1.4.0-preview.3
+        - 1.4.0-preview.4
+        - 1.4.0-preview.5
+        - 1.4.1-pre.1
+        - 1.4.1-pre.2
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4-preview.1
+        - 1.4.4-preview.2
+        - 1.4.4
+        - 1.4.5
+        - 1.4.6
+        - 1.4.7
+        - 1.4.8
+        - 1.4.9
+        - 1.4.11
+        - 1.5.0-pre.3
+        - 1.5.0-pre.4
+        - 1.5.0-pre.5
+        - 1.5.0
+        - 1.5.1
+        - 1.5.2
+        - 1.5.3
+        - 1.5.4
+        - 1.5.5
+        - 1.5.6-preview.1
+        - 1.5.6
+        - 1.6.0-pre.2
+        - 1.6.0-pre.3
+        - 1.6.0-pre.4
+        compatible:
+        - 1.1.1
+        - 1.1.2
+        - 1.1.3-preview.3
+        - 1.2.0-preview.1
+        - 1.2.0-preview.5
+        - 1.2.0-preview.6
+        - 1.2.0-preview.8
+        - 1.2.0-preview.9
+        - 1.2.0-preview.10
+        - 1.2.0-preview.11
+        - 1.2.0-preview.12
+        - 1.2.0
+        - 1.2.1
+        - 1.2.2
+        - 1.2.3
+        - 1.3.0-preview.1
+        - 1.3.0-preview.2
+        - 1.3.0-preview.3
+        - 1.3.0-preview.4
+        - 1.3.0-preview.5
+        - 1.3.0-preview.6
+        - 1.3.0-preview.7
+        - 1.3.0-preview.8
+        - 1.3.0-preview.9
+        - 1.3.0-preview.10
+        - 1.3.0-preview.11
+        - 1.3.0-preview.12
+        - 1.3.0-preview.13
+        - 1.3.0
+        - 1.3.1
+        - 1.3.2
+        - 1.3.3
+        - 1.3.4
+        - 1.3.5
+        - 1.3.6
+        - 1.3.7
+        - 1.3.8
+        - 1.3.9
+        - 1.4.0-pre.1
+        - 1.4.0-preview.1
+        - 1.4.0-preview.2
+        - 1.4.0-preview.3
+        - 1.4.0-preview.4
+        - 1.4.0-preview.5
+        - 1.4.1-pre.1
+        - 1.4.1-pre.2
+        - 1.4.1
+        - 1.4.2
+        - 1.4.3
+        - 1.4.4-preview.1
+        - 1.4.4-preview.2
+        - 1.4.4
+        - 1.4.5
+        - 1.4.6
+        - 1.4.7
+        - 1.4.8
+        - 1.4.9
+        - 1.4.11
+        - 1.5.0-pre.3
+        - 1.5.0-pre.4
+        - 1.5.0-pre.5
+        - 1.5.0
+        - 1.5.1
+        - 1.5.2
+        - 1.5.3
+        - 1.5.4
+        - 1.5.5
+        - 1.5.6-preview.1
+        - 1.5.6
+        - 1.6.0-pre.2
+        - 1.6.0-pre.3
+        - 1.6.0-pre.4
+        verified: 1.4.11
+      dependencies:
+      - name: com.unity.mathematics
+        version: 1.2.1
+      resolvedDependencies:
+      - name: com.unity.mathematics
+        version: 1.2.1
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637324087250000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/burst.git
+        revision: 142be34480be15f14fbf073c350fb08958d80e59
+        path: 
+    - packageId: com.unity.mathematics@1.2.1
+      testable: 0
+      isDirectDependency: 0
+      version: 1.2.1
+      source: 1
+      resolvedPath: C:\Users\wanda\Documents\GitHub\BrackeysJam2021\Library\PackageCache\com.unity.mathematics@1.2.1
+      assetPath: Packages/com.unity.mathematics
+      name: com.unity.mathematics
+      displayName: Mathematics
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity's C# SIMD math library providing vector types and math functions
+        with a shader like syntax.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.1.0
+        - 1.2.1
+        compatible:
+        - 1.1.0
+        - 1.2.1
+        verified: 1.2.1
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - unity
       registry:
         id: main
         name: 
@@ -2711,10 +3214,10 @@ m_PackageAssets:
       hasRepository: 1
       repository:
         type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
-        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+        revision: 71412d94b7a0b0fdbb3195a5e6559bf6a761e91a
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: D:/Documents/Programming/Unity/Brackeys2021/BrackeysJam2021/Packages
+m_ProjectPath: C:/Users/wanda/Documents/GitHub/BrackeysJam2021/Packages
 m_EditorVersion: 2020.3.16f1 (049d6eca3c44)

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/YussefScene.unity
+- path: Assets/Scenes/testLevelDesign.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
