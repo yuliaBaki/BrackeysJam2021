@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody rigid;
@@ -17,7 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private readonly Vector3 standardGravity = new Vector3(0, -19.62f);
     [SerializeField] private int RespawnCooldown = 3;
     [SerializeField] private bool canRespawn = true;
-    
+
+    private List<Vector3> positions = new List<Vector3>();
     
     private void Awake()
     {
@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        positions.Add(transform.position);
         PlaceHolderHorizontalMovement();
         
         rigid.MovePosition(rigid.position + new Vector3(horizontal * speed, 0) * Time.fixedDeltaTime);
@@ -83,7 +84,10 @@ public class PlayerMovement : MonoBehaviour
         GameObject spawnedFloor = Instantiate(generatedFloor,transform.position, transform.rotation);
         spawnedFloor.SetActive(true);
         transform.position = spawn.position;
-
+        
+        var q = new Queue<Vector3>(positions);
+        CloneManager.Instance.AddClonePositions(q);
+        positions = new List<Vector3>();
         yield return new WaitForSeconds(RespawnCooldown);
 
         canRespawn = true;
