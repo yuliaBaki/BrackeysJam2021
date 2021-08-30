@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
     private Rigidbody rigid;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -18,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool canRespawn = true;
 
     private List<Vector3> positions = new List<Vector3>();
-    
+
     private void Awake()
     {
         transform.position = spawn.position;
@@ -33,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         positions.Add(transform.position);
         PlaceHolderHorizontalMovement();
-        
+
         rigid.MovePosition(rigid.position + new Vector3(horizontal * speed, 0) * Time.fixedDeltaTime);
         if (!IsGrounded() && rigid.velocity.y < 0.1f)
         {
@@ -43,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Physics.gravity = standardGravity;
         }
+        animator.SetBool("IsMoving",horizontal>0);
     }
 
     private void PlaceHolderHorizontalMovement()
@@ -52,39 +54,43 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) horizontal = -1;
         else horizontal = 0;
     }
-    
-   // public void Move(InputAction.CallbackContext context)
-   // {
+
+    // public void Move(InputAction.CallbackContext context)
+    // {
     //    horizontal = context.ReadValue<Vector2>().x;
-  //  }
-    
+    //  }
+
     public void Jump(InputAction.CallbackContext context)
     {
-        if(context.performed && IsGrounded())
+        if (context.performed && IsGrounded())
         {
             rigid.velocity = new Vector2(rigid.velocity.x, jumpForce);
+            animator.SetTrigger("Jump");
         }
-        if(context.canceled && rigid.velocity.y > 0f)
+        if (context.canceled && rigid.velocity.y > 0f)
         {
-            
+
             rigid.velocity = new Vector2(rigid.velocity.x, rigid.velocity.y * 0.4f);
         }
-        
+
     }
     public void Die(InputAction.CallbackContext context)
     {
         if (canRespawn == false) return;
         StartCoroutine(RespawnCoroutine());
     }
-
+    public void Death()
+    {
+        StartCoroutine(RespawnCoroutine());
+    }
     IEnumerator RespawnCoroutine()
     {
         canRespawn = false;
-        
-        GameObject spawnedFloor = Instantiate(generatedFloor,transform.position, transform.rotation);
+    
+        GameObject spawnedFloor = Instantiate(generatedFloor, transform.position, transform.rotation);
         spawnedFloor.SetActive(true);
         transform.position = spawn.position;
-        
+
         var q = new Queue<Vector3>(positions);
         CloneManager.Instance.AddClonePositions(q);
         positions = new List<Vector3>();
@@ -94,6 +100,6 @@ public class PlayerMovement : MonoBehaviour
     }
     private bool IsGrounded()
     {
-        return Physics.OverlapSphere(groundCheck.position, 0.2f, groundLayer).Length > 0;
+        return Physics.OverlapSphere(groundCheck.position, 0.3f, groundLayer).Length > 0;
     }
 }

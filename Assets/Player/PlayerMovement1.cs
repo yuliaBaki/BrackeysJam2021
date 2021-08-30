@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class PlayerMovement1 : MonoBehaviour
 {
     private Rigidbody rigid;
@@ -17,8 +16,9 @@ public class PlayerMovement1 : MonoBehaviour
     private readonly Vector3 standardGravity = new Vector3(0, -19.62f);
     [SerializeField] private int RespawnCooldown = 3;
     [SerializeField] private bool canRespawn = true;
-    
-    
+
+    private List<Vector3> positions = new List<Vector3>();
+
     private void Awake()
     {
         transform.position = spawn.position;
@@ -31,8 +31,9 @@ public class PlayerMovement1 : MonoBehaviour
 
     private void FixedUpdate()
     {
+        positions.Add(transform.position);
         PlaceHolderHorizontalMovement();
-        
+
         rigid.MovePosition(rigid.position + new Vector3(horizontal * speed, 0) * Time.fixedDeltaTime);
         if (!IsGrounded() && rigid.velocity.y < 0.1f)
         {
@@ -51,24 +52,24 @@ public class PlayerMovement1 : MonoBehaviour
         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) horizontal = -1;
         else horizontal = 0;
     }
-    
-   // public void Move(InputAction.CallbackContext context)
-   // {
+
+    // public void Move(InputAction.CallbackContext context)
+    // {
     //    horizontal = context.ReadValue<Vector2>().x;
-  //  }
-    
+    //  }
+
     public void Jump(InputAction.CallbackContext context)
     {
-        if(context.performed && IsGrounded())
+        if (context.performed && IsGrounded())
         {
             rigid.velocity = new Vector2(rigid.velocity.x, jumpForce);
         }
-        if(context.canceled && rigid.velocity.y > 0f)
+        if (context.canceled && rigid.velocity.y > 0f)
         {
-            
+
             rigid.velocity = new Vector2(rigid.velocity.x, rigid.velocity.y * 0.4f);
         }
-        
+
     }
     public void Die(InputAction.CallbackContext context)
     {
@@ -79,11 +80,14 @@ public class PlayerMovement1 : MonoBehaviour
     IEnumerator RespawnCoroutine()
     {
         canRespawn = false;
-        
-        GameObject spawnedFloor = Instantiate(generatedFloor,transform.position, transform.rotation);
+
+        GameObject spawnedFloor = Instantiate(generatedFloor, transform.position, transform.rotation);
         spawnedFloor.SetActive(true);
         transform.position = spawn.position;
 
+        var q = new Queue<Vector3>(positions);
+        CloneManager.Instance.AddClonePositions(q);
+        positions = new List<Vector3>();
         yield return new WaitForSeconds(RespawnCooldown);
 
         canRespawn = true;

@@ -95,6 +95,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1974476634287039812
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148569992790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f43657921e40b9d4191df31c39cb18e8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7360436427635996790
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +293,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7360436427992672709}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: Move
+        m_MethodName: Jump
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -375,6 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c0185b9351420c4a9d57983df214397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1974476634287039812}
   groundCheck: {fileID: 7360436427635996793}
   groundLayer:
     serializedVersion: 2
@@ -554,6 +574,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c701f1587b34114c93b809a323b5a0c, type: 3}
+--- !u!1 &919132148569992790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3c701f1587b34114c93b809a323b5a0c, type: 3}
+  m_PrefabInstance: {fileID: 623563527}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450653110285548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c701f1587b34114c93b809a323b5a0c, type: 3}
