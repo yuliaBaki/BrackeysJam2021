@@ -1763,7 +1763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountOfClones: 20
-  clone: {fileID: 0}
+  clone: {fileID: 5550473686110912447, guid: 6d93b3073af8cce4e91726f859dbb7bf, type: 3}
 --- !u!4 &213123005 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6451200428667057924, guid: e241f97bcb303a84d85c72a9ada10b99, type: 3}
